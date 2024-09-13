@@ -1,0 +1,17 @@
+import random
+
+number_list = [1,2,3,4,5]
+
+number = random.choice(number_list)
+
+input_guess = 0
+input_guess_max =3
+
+while input_guess < input_guess_max:
+    guess = input("Guess ")
+    if int(guess) == number:
+        print("well done, you guessed it!")
+        break
+    input_guess += 1
+else:
+    print("game over! :(")
